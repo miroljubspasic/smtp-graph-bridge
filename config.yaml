@@ -1,0 +1,32 @@
+# smtp-graph-bridge configuration
+
+# Azure AD Configuration
+# Directory (tenant) ID
+ms_graph_tenant_id: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+# Application (client) ID
+ms_graph_client_id: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+# Path to certificate file (PFX format). Relative to the executable or absolute path.
+ms_graph_cert_path: "./certs/cert.pfx"
+# Certificate password (if PFX is password protected)
+ms_graph_cert_pass: "your_cert_password_here"
+# Email address to send from (must have Mail.Send permission in Azure AD)
+ms_graph_email_from: "noreply@yourdomain.com"
+
+# SMTP Server Configuration
+# SMTP server port
+smtp_port: 8025
+# SMTP server host (0.0.0.0 = listen on all interfaces)
+smtp_host: "0.0.0.0"
+# Enable SMTP authentication (true/false)
+require_auth: false
+# SMTP credentials (if require_auth is true)
+smtp_auth_username: "smtpuser"
+smtp_auth_password: "smtppassword"
+
+# Health Check Server Configuration
+# Port for the health check server
+health_port: 8080
+
+# Logging Configuration
+# Log level: debug, info, warn, error
+log_level: "info"

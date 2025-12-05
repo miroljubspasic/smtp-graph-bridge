@@ -1,0 +1,40 @@
+# Binaries
+smtp-graph-bridge
+smtp-graph-bridge-*
+*.exe
+dist/
+
+# Go
+*.o
+*.a
+*.so
+
+# Test binary, built with `go test -c`
+*.test
+
+# Go workspace file
+go.work
+
+# Environment variables
+.env
+.env.local
+
+# Certificates (NEVER commit these!)
+*.pfx
+*.p12
+*.pem
+*.key
+*.crt
+*.cer
+certs/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
